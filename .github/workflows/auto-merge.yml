@@ -14,8 +14,8 @@ jobs:
 
       - name: Merge with master
         run: |
-          git config --global user.name "Sailesh Khadka"
-          git config --global user.email "saileshkhadka1@gmail.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
           # Fetch latest changes from remote branches
           git fetch origin master
