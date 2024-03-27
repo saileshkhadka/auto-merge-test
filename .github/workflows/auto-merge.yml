@@ -20,14 +20,16 @@ jobs:
           # Fetch latest changes from remote branches
           git fetch origin master fetch-depth: 0
           git fetch origin test fetch-depth: 0
+
+          # Switch to test branch and pull the changes
           git checkout test
-          git pull origin test
+          git pull origin test --allow-unrelated-histories
 
           # Switch to master branch
           git checkout master
 
           # Pull changes
-          git pull origin master
+          git pull origin master --allow-unrelated-histories
 
           # Merge test into master
           git merge origin/test
