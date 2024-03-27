@@ -20,6 +20,8 @@ jobs:
           # Fetch latest changes from remote branches
           git fetch origin master
           git fetch origin test
+          git checkout test
+          git pull origin test
 
           # Switch to master branch
           git checkout master
