@@ -23,9 +23,9 @@ jobs:
 
           # Switch to test branch and pull the changes
           git checkout test
-          git pull origin test --allow-unrelated-histories
+          git pull origin test
 
-          # Switch to master branch
+          # Switch to master branch 
           git checkout master
 
           # Pull changes
