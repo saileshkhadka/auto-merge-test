@@ -2,7 +2,7 @@ name: auto merge test ci
 
 on:
   schedule:
-    - cron: '*/5 * * * *' 
+    - cron: '*/1 * * * *' 
 
 jobs:
   merge:
