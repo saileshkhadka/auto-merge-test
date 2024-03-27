@@ -23,7 +23,7 @@ jobs:
 
           # Switch to test branch and pull the changes
           git checkout test
-          git pull origin test
+          git pull -u origin test
 
           # Switch to master branch 
           git checkout master
