@@ -18,8 +18,8 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           # Fetch latest changes from remote branches
-          git fetch origin master fetch-depth: 0
-          git fetch origin test fetch-depth: 0
+          git fetch origin master
+          git fetch origin test
 
           # Switch to test branch and pull the changes
           git checkout test
@@ -35,4 +35,4 @@ jobs:
           git merge origin/test
 
           # Push changes to master branch
-          git push origin master
+          git push -u origin master
